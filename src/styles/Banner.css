@@ -1,0 +1,250 @@
+.banner-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .textosBanner2 {
+    justify-content: center;
+    align-content: center;
+    text-align: start;
+    margin-top: 250px;
+    width: 50%;
+    z-index: 10;
+    margin-left: 6%;
+  }
+  .tituloBanner {
+    font-size: 3rem;
+    width: 100%;
+    
+    margin-bottom: 3%;
+    color: white;
+    justify-content: center;
+    text-align: start;
+  }
+  .subtituloBanner {
+    font-size: 1.2rem;
+    width: 90%;
+    color: white;
+    justify-content: center;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+  .subtituloBanner5{
+    font-size: 1.2rem;
+    width: 80%;
+    color: white;
+    justify-content: center;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+  .container-botones2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 60%;
+  }
+  .container-botones2 input{
+    height: 20px;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #44494a;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+  }
+  .container-botones2 input::placeholder{
+    color: white;
+  }
+  .input-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #00b174;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .input-email {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .button-landing-5 {
+    background-color: transparent;
+    border-radius: 50px;
+    width: 280px;
+    height: 50px;
+    font-size: 1rem;
+    margin: auto;
+    animation: ease-in 1s ;
+   
+  }
+ 
+  
+  .error-message {
+    color: red;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+  
+  .button-landing-5.confirmed {
+    background-color: #00b174;
+    cursor: default;
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .triangles-background {
+
+    height: 100%; 
+  }
+  .triangle {
+    position: absolute;
+    animation: float 5s ease-in-out infinite;
+  }
+  .triangle1 {
+    top: 65%;
+    left: 89%;
+    width: 250px; 
+    height: auto;
+    z-index: 10;
+    animation-delay: 0s;
+  }
+  
+  .triangle2 {
+    top: 60%;
+    left: 83%;
+    width: 260px; 
+    height: auto;
+    animation-delay: 1s;
+  }
+  
+  .triangle3 {
+    top: 18%;
+    left: 94%;
+    width: 250px; 
+    height: auto;
+    animation-delay: 2s;
+  }
+  
+  .triangle4 {
+    top: 35%;
+    left: 92%;
+    width: 220px; 
+    height: auto;
+    animation-delay: 3s;
+  }
+  
+  .triangle5 {
+    top: 60%;
+    left: 75%;
+    width: 130px; 
+    height: auto;
+    z-index: 10;
+    animation-delay: 4s;
+  }
+  
+  .triangle6 {
+    top: 52%;
+    left: 70.5%;
+    width: 150px; 
+    height: auto;
+    animation-delay: 5s;
+  }
+  
+  .triangle7 {
+    top: 20%;
+    left: 75%;
+    width: 270px; 
+    height: auto;
+    animation-delay: 6s;
+  }
+  .triangle8 {
+    top: 20%;
+    left: 68%;
+    width: 220px; 
+    height: auto;
+    animation-delay: 7s;
+  }
+  .triangle9 {
+    top: 18%;
+    left: 38%;
+    width: 500px; 
+    height: auto;
+    z-index: 0;
+    animation-delay: 8s;
+  }
+  .triangle10 {
+    top: 47%;
+    left: 60%;
+    width: 200px; 
+    height: auto;
+    z-index: 10;
+    animation-delay: 9s;
+  }
+  
+  .triangle img {
+    width: 100%;
+    height: 100%;
+  }
+  @media only screen and (max-width: 650px) {
+    .banner-container {
+        width: 100%;
+        display: flex;
+        height: 100%;
+      }
+      .textosBanner2 {
+        width: 100%;
+        margin-top: 100px;
+       }
+       .tituloBanner {
+        font-size: 1.8rem;
+        font-weight: 100;
+      }
+      .subtituloBanner {
+        display: flex;
+        justify-content: center;
+        margin: 0 !important;
+        font-size: 1rem;
+      }
+      .container-botones2{
+        margin-top: 10px;
+      }
+      .button-landing-5{
+        width: 100%;
+      }
+  }
+
+  @media only screen and (max-width: 1500px) {
+    .subtituloBanner{
+      font-size: 1rem;
+      width: 90%;
+      
+    }
+    .subtituloBanner5{
+        font-weight: 600;
+        font-size: 1rem;
+      }
+      .button-landing-5{
+        font-size: 0.9rem;
+        
+      }
+}
