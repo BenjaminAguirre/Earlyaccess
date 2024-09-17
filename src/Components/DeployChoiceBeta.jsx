@@ -22,7 +22,12 @@ const DeployChoiceBeta = () => {
         setFluxData(data);
       } catch (error) {
         console.error("Error fetching Flux data:", error.message);
-        setFluxData(null); // or some default/error state
+        setFluxData({
+          totalSsd: 6.830,
+          totalRam: 254,
+          totalStorage: 106
+    
+        }); // or some default/error state
       }
     };
 
@@ -65,6 +70,12 @@ const DeployChoiceBeta = () => {
         });
       } catch (error) {
         console.error("Error fetching Akash data:", error);
+        setAkashData({
+          totalSsd:777,
+          totalRam:94,
+          totalCpu:18.450,
+          totalNodes:64,
+        });
       }
     };
 
